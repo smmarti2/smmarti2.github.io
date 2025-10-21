@@ -1,0 +1,72 @@
+/* styles.css — tiny, readable, accessible */
+
+:root {
+  --fg: #111;
+  --bg: #f7f7f7;
+  --accent: #0b5fff;
+  --radius: 10px;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { color-scheme: light; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+               Ubuntu, Cantarell, "Helvetica Neue", Arial, "Apple Color Emoji",
+               "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.6;
+  color: var(--fg);
+  background: var(--bg);
+}
+
+nav {
+  background: #333;
+  color: white;
+  padding: 0.75rem 1rem;
+}
+nav a {
+  color: white;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+nav a:hover { text-decoration: underline; }
+
+main {
+  max-width: 65ch;
+  margin: auto;
+  padding: 1rem;
+}
+
+/* Responsive images */
+img,
+svg,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Clear, keyboard-first focus styles */
+a,
+button,
+input,
+select,
+textarea {
+  border-radius: var(--radius);
+}
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* Footer */
+footer {
+  padding: 1rem;
+  color: white;
+  background: #333;
+  text-align: center;
+}

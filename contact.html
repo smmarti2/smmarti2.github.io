@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Seth's Home Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav aria-label="Primary">
+    <a href="/">Home</a>
+    <a href="/journal.html">Journal</a>
+    <a href="#contact">Contact</a>
+    <a href="https://EXTERNAL-URL" target="_blank" rel="noopener noreferrer">
+      Course Link
+      <span class="visually-hidden">(opens in new tab)</span>
+    </a>
+  </nav>
+
+  <main>
+    <h1>Seth</h1>
+    <p>Hello! I’m Seth, a student passionate about artificial intelligence.
+       I’ve taken courses on machine learning, neural networks, and AI in video games.
+       I enjoy exploring how AI can create interactive, intelligent systems.</p>
+
+    <h2>About Me</h2>
+    <img src="ANI049-00030 (1).jpg"
+         alt="Young tapir standing on light background"
+         loading="lazy">
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <p>Have a question or want to collaborate? Reach me here:</p>
+      <p>
+        <a href="https://github.com/smmarti2" target="_blank" rel="noopener noreferrer">
+          GitHub: smmarti2
+          <span class="visually-hidden">(opens in new tab)</span>
+        </a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p id="date"></p>
+  </footer>
+
+  <script>
+    const today = new Date();
+    document.getElementById("date").textContent =
+      "Today's date: " + today.toLocaleDateString();
+  </script>
+
+</body>
+</html>
